@@ -59,7 +59,7 @@ class MyRecommender:
                 data_loss = np.sum(np.square(error) / 2)
                 regularization_loss = (lambda_ / 2) * (np.sum(np.square(W)) + np.sum(np.square(X)))
                 total_loss = data_loss + regularization_loss
-                #print(i,"th iteration     Loss:", "{:.4f}".format(total_loss))
+                print(i,"th iteration     Loss:", "{:.4f}".format(total_loss))
 
         return W, X, B_film, B_user
 

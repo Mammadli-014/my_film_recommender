@@ -4,7 +4,7 @@ from surprise import SVD, Dataset, Reader, accuracy
 from util.MyRecommender import MyRecommender
 
 ratings = pd.read_csv(
-    r"C:\Users\user\Downloads\ml-100k\ml-100k\u.data",
+    r"C:\Users\user\PycharmProjects\FilmRecommender\data\ml-100k\u.data",
     sep="\t",
     names=["user_id" , "movie_id", "rating" , "timestamp"]
 )
